@@ -1,0 +1,51 @@
+1. Persiapan
+ 
+- Unduh ISO: Download file ISO Debian dari situs resmi debian.org. Pilih versi amd64 untuk komputer modern 64-bit.
+
+- Media Instalasi: Gunakan aplikasi seperti Rufus atau Etcher untuk membuat USB bootable dari file ISO tersebut.
+
+- Backup Data: Pastikan data penting di komputer Anda sudah dicadangkan jika ingin melakukan instalasi di hard drive fisik.
+ 
+2. Memulai Instalasi
+ 
+1. Boot dari USB: Masukkan USB ke komputer, nyalakan, dan masuk ke menu BIOS/Boot (biasanya menekan F12, F2, atau Del) untuk memilih boot dari USB.
+
+2. Pilih Metode Instalasi: Pilih "Graphical Install" untuk tampilan yang lebih mudah dipahami (menggunakan mouse).
+ 
+3. Konfigurasi Dasar
+ 
+- Bahasa & Lokasi: Pilih "English" (atau Indonesia) dan lokasi negara Anda untuk pengaturan zona waktu.
+
+- Keyboard: Pilih "American English" sebagai tata letak standar.
+
+- Hostname & Domain: Isi nama komputer (misal:  debian-pc ). Untuk domain, Anda bisa mengosongkannya jika untuk penggunaan pribadi.
+ 
+4. Pengaturan Pengguna (User)
+ 
+1. Root Password: Masukkan kata sandi untuk administrator (Root). Jangan sampai lupa, karena ini digunakan untuk mengubah sistem.
+
+2. User Baru: Masukkan nama lengkap dan username untuk penggunaan sehari-hari, lalu buat kata sandinya.
+ 
+5. Partisi Hardisk
+ 
+Ini adalah tahap yang paling krusial:
+ 
+- Pilihan Mudah: Pilih "Guided - use entire disk" jika Anda ingin menghapus seluruh isi hardisk dan mengisinya dengan Debian.
+
+- Skema Partisi: Pilih "All files in one partition" (disarankan untuk pemula).
+
+- Selesai: Pilih "Finish partitioning and write changes to disk", lalu konfirmasi dengan memilih "Yes".
+ 
+6. Konfigurasi Paket & Perangkat Lunak
+ 
+1. Scan media lain: Pilih "No".
+
+2. Network Mirror: Pilih "Yes", pilih negara terdekat (Indonesia), lalu pilih  deb.debian.org .
+
+3. Software Selection: Pilih lingkungan desktop yang Anda inginkan (contoh: GNOME, XFCE, atau KDE Plasma). Pastikan "standard system utilities" juga tercentang.
+ 
+7. Penutup
+ 
+- Install GRUB: Saat muncul pilihan untuk menginstal GRUB boot loader, pilih "Yes" dan pilih nama hardisk Anda (misal:  /dev/sda ).
+
+- Selesai: Setelah proses selesai, komputer akan meminta Anda untuk mencabut USB dan melakukan Restart.
